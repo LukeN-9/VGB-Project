@@ -1,0 +1,47 @@
+<data>
+  <com.vgb.Company>
+    <companyUuid>d7d7b071-e63f-4af5-88f3-2e47a09852fb</companyUuid>
+    <contactUuid>30f42bcf-2556-491e-8c0c-4e52d7dcfd90</contactUuid>
+    <name>Weissnat and Okuneva</name>
+    <street>531 Bunting Way</street>
+    <city>Pasadena</city>
+    <state>CA</state>
+    <zip>91131</zip>
+  </com.vgb.Company>
+  <com.vgb.Company>
+    <companyUuid>e2b1228a-1066-4f79-99c6-321658ef1587</companyUuid>
+    <contactUuid>96aa54a4-f452-405c-82b2-12f262095f75</contactUuid>
+    <name>Abernathy-Schamberger</name>
+    <street>243 Oriole Avenue</street>
+    <city>Seattle</city>
+    <state>WA</state>
+    <zip>98148</zip>
+  </com.vgb.Company>
+  <com.vgb.Company>
+    <companyUuid>d631d183-5276-49cd-8136-ba130df24826</companyUuid>
+    <contactUuid>cc88a3dc-64d6-4070-b9b0-b2ae9ace0061</contactUuid>
+    <name>Jacobi and White</name>
+    <street>46 Ruskin Lane</street>
+    <city>Amarillo</city>
+    <state>TX</state>
+    <zip>79176</zip>
+  </com.vgb.Company>
+  <com.vgb.Company>
+    <companyUuid>a8bae950-96ac-43a9-9a29-729db552e981</companyUuid>
+    <contactUuid>ddd24cee-31fa-48ac-b311-04fc329bb03b</contactUuid>
+    <name>Klocko Inc</name>
+    <street>0 Ridge Oak Trail</street>
+    <city>Washington</city>
+    <state>DC</state>
+    <zip>20566</zip>
+  </com.vgb.Company>
+  <com.vgb.Company>
+    <companyUuid>0673a09a-5cc1-4269-88f2-e665c2f3f33c</companyUuid>
+    <contactUuid>bc0d9b2c-39ad-4c01-a835-02cfe79bf43e</contactUuid>
+    <name>Mitchell LLC</name>
+    <street>5887 Bobwhite Trail</street>
+    <city>Philadelphia</city>
+    <state>PA</state>
+    <zip>19136</zip>
+  </com.vgb.Company>
+</data>

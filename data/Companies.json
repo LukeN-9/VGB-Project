@@ -1,0 +1,47 @@
+[
+  {
+    "companyUuid": "d7d7b071-e63f-4af5-88f3-2e47a09852fb",
+    "contactUuid": "30f42bcf-2556-491e-8c0c-4e52d7dcfd90",
+    "name": "Weissnat and Okuneva",
+    "street": "531 Bunting Way",
+    "city": "Pasadena",
+    "state": "CA",
+    "zip": "91131"
+  },
+  {
+    "companyUuid": "e2b1228a-1066-4f79-99c6-321658ef1587",
+    "contactUuid": "96aa54a4-f452-405c-82b2-12f262095f75",
+    "name": "Abernathy-Schamberger",
+    "street": "243 Oriole Avenue",
+    "city": "Seattle",
+    "state": "WA",
+    "zip": "98148"
+  },
+  {
+    "companyUuid": "d631d183-5276-49cd-8136-ba130df24826",
+    "contactUuid": "cc88a3dc-64d6-4070-b9b0-b2ae9ace0061",
+    "name": "Jacobi and White",
+    "street": "46 Ruskin Lane",
+    "city": "Amarillo",
+    "state": "TX",
+    "zip": "79176"
+  },
+  {
+    "companyUuid": "a8bae950-96ac-43a9-9a29-729db552e981",
+    "contactUuid": "ddd24cee-31fa-48ac-b311-04fc329bb03b",
+    "name": "Klocko Inc",
+    "street": "0 Ridge Oak Trail",
+    "city": "Washington",
+    "state": "DC",
+    "zip": "20566"
+  },
+  {
+    "companyUuid": "0673a09a-5cc1-4269-88f2-e665c2f3f33c",
+    "contactUuid": "bc0d9b2c-39ad-4c01-a835-02cfe79bf43e",
+    "name": "Mitchell LLC",
+    "street": "5887 Bobwhite Trail",
+    "city": "Philadelphia",
+    "state": "PA",
+    "zip": "19136"
+  }
+]
