@@ -14,9 +14,8 @@ public class DataConverter {
         
         // Parse CSV files
         List<Person> persons = Person.parsePersons(dataDir + "/Persons.csv");
-        List<Company> companies = Company.parseCompanies(dataDir + "/Companies.csv");
+        List<Company> companies = Company.parseCompanies(dataDir + "/Companies.csv", persons); // Pass persons to Company parsing
         List<Item> items = Item.parseItems(dataDir + "/Items.csv");
-
 
         // Serialize to JSON
         serializeToJson(persons, dataDir + "/Persons.json");
@@ -48,3 +47,4 @@ public class DataConverter {
         }
     }
 }
+

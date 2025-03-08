@@ -5,17 +5,18 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.UUID;
 
 public abstract class Item {
-    protected String uuid;
-    protected String name;
+    private UUID uuid;
+    private String name;
 
     public Item(String uuid, String name) {
-        this.uuid = uuid;
+        this.uuid = UUID.fromString(uuid);
         this.name = name;
     }
 
-	public String getUuid() {
+	public UUID getUuid() {
 		return uuid;
 	}
 
@@ -23,6 +24,10 @@ public abstract class Item {
 		return name;
 	}
 	
+	public double roundToCent(double price) {
+	    return Math.round(price * 100.0) / 100.0;
+	}
+		
 	public static List<Item> parseItems(String filePath) {
         List<Item> items = new ArrayList<>();
         try {

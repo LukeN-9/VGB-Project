@@ -6,23 +6,24 @@ import java.nio.file.Paths;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
+import java.util.UUID;
 
-public class Person {
-    private String uuid;
+public class Person{
+    private UUID uuid;
     private String firstName;
     private String lastName;
     private String phone;
     private List<String> emails;
 
     public Person(String uuid, String firstName, String lastName, String phone, List<String> emails) {
-        this.uuid = uuid;
+        this.uuid = UUID.fromString(uuid);
         this.firstName = firstName;
         this.lastName = lastName;
         this.phone = phone;
         this.emails = (emails != null) ? new ArrayList<>(emails) : new ArrayList<>();
     }
 
-	public String getUuid() {
+	public UUID getUuid() {
 		return uuid;
 	}
 
@@ -61,5 +62,11 @@ public class Person {
         }
         return persons;
     }
+	
+	@Override
+	public String toString() {
+	    return "Person: " + firstName + " " + lastName + " (Phone: " + phone + ", Emails: " + emails + ")";
+	}
+
     
 }
