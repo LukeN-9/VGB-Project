@@ -1,10 +1,6 @@
 package com.vgb;
 
-import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.UUID;
 
@@ -43,29 +39,9 @@ public class Person{
 		return emails;
 	}
 	
-	public static List<Person> parsePersons(String filePath) {
-        List<Person> persons = new ArrayList<>();
-        try {
-            List<String> lines = Files.readAllLines(Paths.get(filePath));
-            lines.remove(0);
-            for (String line : lines) {
-                String[] parts = line.split(",");
-                String uuid = parts[0];
-                String firstName = parts[1];
-                String lastName = parts[2];
-                String phone = parts[3];
-                List<String> emails = parts.length > 4 ? Arrays.asList(parts[4].split(";")) : new ArrayList<>();
-                persons.add(new Person(uuid, firstName, lastName, phone, emails));
-            }
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-        return persons;
-    }
-	
 	@Override
 	public String toString() {
-	    return "Person: " + firstName + " " + lastName + " (Phone: " + phone + ", Emails: " + emails + ")";
+	    return lastName + ", " + firstName + " (" + uuid + ")\n" + emails;
 	}
 
     

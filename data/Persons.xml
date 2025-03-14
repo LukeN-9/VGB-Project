@@ -1,227 +1,56 @@
 <data>
   <com.vgb.Person>
-    <uuid>5e374c71-7684-45d0-a7a2-a6af43624ee8</uuid>
-    <firstName>Pris</firstName>
-    <lastName>Doveston</lastName>
-    <phone></phone>
+    <uuid>fedcba98-7654-3210-9876-543210fedcba</uuid>
+    <firstName>Ken</firstName>
+    <lastName>Doll</lastName>
+    <phone>381-482-1038</phone>
     <emails>
-      <string>pdoveston0@house.gov</string>
+      <string>ken.d@hotmail.com</string>
     </emails>
   </com.vgb.Person>
   <com.vgb.Person>
-    <uuid>98ee31e2-9d03-4791-99a6-d56c387aecad</uuid>
-    <firstName>Britt</firstName>
-    <lastName>Sporgeon</lastName>
-    <phone></phone>
+    <uuid>edcba987-6543-210f-9876-54321fedcba9</uuid>
+    <firstName>Kyle</firstName>
+    <lastName>Minchow</lastName>
+    <phone>582-694-1581</phone>
     <emails>
-      <string>bsporgeon1@hao123.com</string>
+      <string>kmin@gmail.com</string>
     </emails>
   </com.vgb.Person>
   <com.vgb.Person>
-    <uuid>ef5aacc4-f933-4794-945b-a4e1592f2cae</uuid>
-    <firstName>Nap</firstName>
-    <lastName>Jennins</lastName>
-    <phone></phone>
+    <uuid>dba98765-4321-0f9e-8765-4321fedcba98</uuid>
+    <firstName>Luke</firstName>
+    <lastName>Nash</lastName>
+    <phone>491-482-0828</phone>
     <emails>
-      <string>njennins2@google.nl</string>
+      <string>ldogg@gmail.com</string>
     </emails>
   </com.vgb.Person>
   <com.vgb.Person>
-    <uuid>74e531b6-3d5f-4459-9b6f-44824fcd46bf</uuid>
-    <firstName>Krystle</firstName>
-    <lastName>Lyard</lastName>
-    <phone></phone>
+    <uuid>abcdef12-3456-7890-abcd-ef1234567890</uuid>
+    <firstName>Bob</firstName>
+    <lastName>Johnson</lastName>
+    <phone>555-9101</phone>
     <emails>
-      <string>klyard3@aboutads.info</string>
+      <string>bob.johnson@example.com</string>
     </emails>
   </com.vgb.Person>
   <com.vgb.Person>
-    <uuid>9e7a9266-a9ee-4e7d-8d70-68bac1f2f107</uuid>
-    <firstName>Danny</firstName>
-    <lastName>Gyorffy</lastName>
-    <phone></phone>
+    <uuid>bcdef123-4567-890a-bcde-f1234567890a</uuid>
+    <firstName>Jane</firstName>
+    <lastName>Smith</lastName>
+    <phone>555-5678</phone>
     <emails>
-      <string>dgyorffy4@yahoo.co.jp</string>
+      <string>jane.smith@example.com</string>
     </emails>
   </com.vgb.Person>
   <com.vgb.Person>
-    <uuid>2ee639c4-d74d-4883-ba5b-2df5d23eb9c2</uuid>
-    <firstName>Inger</firstName>
-    <lastName>Jenkin</lastName>
-    <phone></phone>
+    <uuid>cdef1234-5678-90ab-cdef-1234567890ab</uuid>
+    <firstName>John</firstName>
+    <lastName>Doe</lastName>
+    <phone>555-1234</phone>
     <emails>
-      <string>ijenkin5@qq.com</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>df3be454-b04c-4ce8-8b92-f90e37d811b8</uuid>
-    <firstName>Shadow</firstName>
-    <lastName>Chrestien</lastName>
-    <phone></phone>
-    <emails>
-      <string>schrestien6@e-recht24.de</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>b7ca9e9f-3697-47db-9425-03e9f58edf72</uuid>
-    <firstName>Eben</firstName>
-    <lastName>Waldie</lastName>
-    <phone></phone>
-    <emails>
-      <string>ewaldie7@instagram.com</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>9fdda94e-c754-40d5-bf38-e61625df16d4</uuid>
-    <firstName>Lucius</firstName>
-    <lastName>Yarn</lastName>
-    <phone></phone>
-    <emails>
-      <string>lyarn8@chicagotribune.com</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>1491ebbd-7d47-410c-a2e1-c32fe814d649</uuid>
-    <firstName>Hy</firstName>
-    <lastName>Dredge</lastName>
-    <phone></phone>
-    <emails>
-      <string>hdredge9@stanford.edu</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>42d69f7b-f402-4fe4-a34f-fa59067e8c2e</uuid>
-    <firstName>Abby</firstName>
-    <lastName>Mellmer</lastName>
-    <phone></phone>
-    <emails>
-      <string>amellmera@vkontakte.ru</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>8aa3e638-124e-4e2d-912e-62f1c21332b8</uuid>
-    <firstName>Burton</firstName>
-    <lastName>Sowthcote</lastName>
-    <phone></phone>
-    <emails>
-      <string>bsowthcoteb@wiley.com</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>f4def1ef-50bc-4a04-b6a6-4332f7782f11</uuid>
-    <firstName>Dav</firstName>
-    <lastName>Jagels</lastName>
-    <phone></phone>
-    <emails>
-      <string>djagelsc@bloglines.com</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>fee42f77-d555-42c0-b1cc-67b844e81300</uuid>
-    <firstName>Gunter</firstName>
-    <lastName>Caveill</lastName>
-    <phone>402-854-1324</phone>
-    <emails>
-      <string>gcaveilld@youtube.com</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>1b5724f8-bc8f-4b93-aad9-d203f3213ac5</uuid>
-    <firstName>Flint</firstName>
-    <lastName>Ollarenshaw</lastName>
-    <phone></phone>
-    <emails>
-      <string>follarenshawe@jalbum.net</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>8a66791f-3753-4a90-bb6f-6387a9a7be54</uuid>
-    <firstName>Hayyim</firstName>
-    <lastName>Imison</lastName>
-    <phone></phone>
-    <emails>
-      <string>himisonf@google.ca</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>831484fc-5220-44ed-bcad-9ac231f94eb6</uuid>
-    <firstName>Brena</firstName>
-    <lastName>Baile</lastName>
-    <phone>315-902-9312</phone>
-    <emails>
-      <string>bbaileg@cnet.com</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>c88bf640-bf8b-4e76-ab51-7a7a3e035d95</uuid>
-    <firstName>Brandy</firstName>
-    <lastName>Ugoletti</lastName>
-    <phone></phone>
-    <emails>
-      <string>bugolettih@instagram.com</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>7ebdc6f3-484e-48c6-91e2-699fcb6475db</uuid>
-    <firstName>Zitella</firstName>
-    <lastName>Littlejohn</lastName>
-    <phone></phone>
-    <emails>
-      <string>zlittlejohni@google.com.hk</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>db8f7363-869d-4f0e-985e-80119bf96e25</uuid>
-    <firstName>Reube</firstName>
-    <lastName>Lezemere</lastName>
-    <phone></phone>
-    <emails>
-      <string>rlezemerej@illinois.edu</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>4ca7be6c-2e2d-49b8-9055-3fcf506f7aff</uuid>
-    <firstName>Ara</firstName>
-    <lastName>Rogans</lastName>
-    <phone></phone>
-    <emails>
-      <string>arogansk@list-manage.com</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>fe76a81c-ffc0-4bf6-97ae-0d9a2356fef9</uuid>
-    <firstName>Al</firstName>
-    <lastName>Rojahn</lastName>
-    <phone></phone>
-    <emails>
-      <string>arojahnl@paypal.com</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>686b6a3a-d6bf-44e1-92f3-9ef92358d202</uuid>
-    <firstName>Bobby</firstName>
-    <lastName>Crucitti</lastName>
-    <phone></phone>
-    <emails>
-      <string>bcrucittim@discovery.com</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>bad17848-364c-4fa1-a10a-049bfd638797</uuid>
-    <firstName>Merola</firstName>
-    <lastName>Ware</lastName>
-    <phone></phone>
-    <emails>
-      <string>mwaren@so-net.ne.jp</string>
-    </emails>
-  </com.vgb.Person>
-  <com.vgb.Person>
-    <uuid>4dda570d-bc8c-4a95-a3a2-bfb4516b0717</uuid>
-    <firstName>Claire</firstName>
-    <lastName>Egar</lastName>
-    <phone>508-241-9256</phone>
-    <emails>
-      <string>cegaro@reddit.com</string>
+      <string>john.doe@example.com</string>
     </emails>
   </com.vgb.Person>
 </data>

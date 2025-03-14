@@ -1,47 +1,59 @@
 [
   {
-    "companyUuid": "d7d7b071-e63f-4af5-88f3-2e47a09852fb",
-    "contactUuid": "30f42bcf-2556-491e-8c0c-4e52d7dcfd90",
-    "name": "Weissnat and Okuneva",
-    "street": "531 Bunting Way",
-    "city": "Pasadena",
-    "state": "CA",
-    "zip": "91131"
+    "companyUuid": "9f8e7d6c-5b4a-3f2e-1d0c-b9a8e7d6c5b4",
+    "contact": {
+      "uuid": "abcdef12-3456-7890-abcd-ef1234567890",
+      "firstName": "Bob",
+      "lastName": "Johnson",
+      "phone": "555-9101",
+      "emails": [
+        "bob.johnson@example.com"
+      ]
+    },
+    "name": "CoolTech",
+    "address": {
+      "street": "123 Main St",
+      "city": "New York",
+      "state": "NY",
+      "zip": "10001"
+    }
   },
   {
-    "companyUuid": "e2b1228a-1066-4f79-99c6-321658ef1587",
-    "contactUuid": "96aa54a4-f452-405c-82b2-12f262095f75",
-    "name": "Abernathy-Schamberger",
-    "street": "243 Oriole Avenue",
-    "city": "Seattle",
-    "state": "WA",
-    "zip": "98148"
+    "companyUuid": "8e7d6c5b-4a3f-2e1d-0cb9-a8e7d6c5b4a3",
+    "contact": {
+      "uuid": "bcdef123-4567-890a-bcde-f1234567890a",
+      "firstName": "Jane",
+      "lastName": "Smith",
+      "phone": "555-5678",
+      "emails": [
+        "jane.smith@example.com"
+      ]
+    },
+    "name": "TechyToys",
+    "address": {
+      "street": "456 Elm St",
+      "city": "Los Angeles",
+      "state": "CA",
+      "zip": "90001"
+    }
   },
   {
-    "companyUuid": "d631d183-5276-49cd-8136-ba130df24826",
-    "contactUuid": "cc88a3dc-64d6-4070-b9b0-b2ae9ace0061",
-    "name": "Jacobi and White",
-    "street": "46 Ruskin Lane",
-    "city": "Amarillo",
-    "state": "TX",
-    "zip": "79176"
-  },
-  {
-    "companyUuid": "a8bae950-96ac-43a9-9a29-729db552e981",
-    "contactUuid": "ddd24cee-31fa-48ac-b311-04fc329bb03b",
-    "name": "Klocko Inc",
-    "street": "0 Ridge Oak Trail",
-    "city": "Washington",
-    "state": "DC",
-    "zip": "20566"
-  },
-  {
-    "companyUuid": "0673a09a-5cc1-4269-88f2-e665c2f3f33c",
-    "contactUuid": "bc0d9b2c-39ad-4c01-a835-02cfe79bf43e",
-    "name": "Mitchell LLC",
-    "street": "5887 Bobwhite Trail",
-    "city": "Philadelphia",
-    "state": "PA",
-    "zip": "19136"
+    "companyUuid": "7d6c5b4a-3f2e-1d0c-b9a8-e7d6c5b4a3f2",
+    "contact": {
+      "uuid": "cdef1234-5678-90ab-cdef-1234567890ab",
+      "firstName": "John",
+      "lastName": "Doe",
+      "phone": "555-1234",
+      "emails": [
+        "john.doe@example.com"
+      ]
+    },
+    "name": "CStuff",
+    "address": {
+      "street": "789 Oak St",
+      "city": "Chicago",
+      "state": "IL",
+      "zip": "60001"
+    }
   }
 ]

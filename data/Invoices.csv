@@ -1,0 +1,4 @@
+invoiceUUID,customerUUID,salesPersonUUID,date
+a1b2c3d4-5678-90ab-cdef-1234567890ab,9f8e7d6c-5b4a-3f2e-1d0c-b9a8e7d6c5b4,fedcba98-7654-3210-9876-543210fedcba,2025-03-10
+b2c3d4e5-6789-01ab-cdef-234567890abc,8e7d6c5b-4a3f-2e1d-0cb9-a8e7d6c5b4a3,edcba987-6543-210f-9876-54321fedcba9,2025-04-22
+c3d4e5f6-7890-12ab-cdef-34567890abcd,7d6c5b4a-3f2e-1d0c-b9a8-e7d6c5b4a3f2,dba98765-4321-0f9e-8765-4321fedcba98,2025-05-15

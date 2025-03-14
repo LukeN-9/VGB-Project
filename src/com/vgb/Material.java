@@ -3,11 +3,13 @@ package com.vgb;
 public class Material extends Item {
     private String unit;
     private double costPerUnit;
+    private int quantity;
 
-    public Material(String uuid, String name, String unit, double costPerUnit) {
+    public Material(String uuid, String name, String unit, double costPerUnit, int quantity) {
         super(uuid, name);
         this.unit = unit;
         this.costPerUnit = costPerUnit;
+        this.quantity = quantity;
     }
 
     public String getUnit() {
@@ -18,19 +20,25 @@ public class Material extends Item {
         return costPerUnit;
     }
 
-    /** Calculates the cost for purchasing materials */
-    public double calculateMaterialCost(int units) {
-        return roundToCent(costPerUnit * units);
+    public int getQuantity() {
+        return quantity;
+    }
+    
+    public void setQuantity(int quantity) {
+    	this.quantity = quantity;
     }
 
-    /** Calculates tax on material purchase */
-    public double calculateMaterialTax(int units) {
-        return roundToCent(calculateMaterialCost(units) * 0.0715);
+    /** Implements cost and tax for materials */
+    @Override
+    public double getCost() {
+        return roundToCent(costPerUnit * quantity);
     }
 
     @Override
-    public String toString() {
-        return "Material: " + getName() + " (Unit: " + unit + ", Cost per Unit: $" + String.format("%.2f", costPerUnit) + ")";
+    public double getTax() {
+        return roundToCent(getCost() * 0.0715); // 7.15% tax
     }
+
 }
+
 

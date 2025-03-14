@@ -1,87 +1,40 @@
 <data>
   <com.vgb.Equipment>
-    <uuid>2dd5220e-6779-4fe7-81d2-b79dcbff3415</uuid>
-    <name>Dragline</name>
-    <modelNumber>DX200b</modelNumber>
-    <retailPrice>347125.0</retailPrice>
+    <uuid>1a2b3c4d-5678-90ab-cdef-234567890abc</uuid>
+    <name>Excavator</name>
+    <modelNumber>EX200</modelNumber>
+    <retailPrice>75000.0</retailPrice>
+  </com.vgb.Equipment>
+  <com.vgb.Material>
+    <uuid>2b3c4d5e-6789-01ab-cdef-34567890abcd</uuid>
+    <name>Concrete Bag</name>
+    <unit>Bag</unit>
+    <costPerUnit>9.99</costPerUnit>
+    <quantity>150</quantity>
+  </com.vgb.Material>
+  <com.vgb.Contract>
+    <uuid>3c4d5e6f-7890-12ab-cdef-4567890abcde</uuid>
+    <name>Foundation Pour</name>
+    <companyUuid>12e34f56-789a-4012-b345-67890abcde12</companyUuid>
+    <cost>12000.0</cost>
+  </com.vgb.Contract>
+  <com.vgb.Equipment>
+    <uuid>4d5e6f76-8901-23ab-cdef-567890abcdef</uuid>
+    <name>Crane</name>
+    <modelNumber>CR300</modelNumber>
+    <retailPrice>50000.0</retailPrice>
   </com.vgb.Equipment>
   <com.vgb.Equipment>
-    <uuid>4c0c851d-0466-42c8-8631-0b414db5be98</uuid>
-    <name>Bulldozer</name>
-    <modelNumber>XPXY4</modelNumber>
-    <retailPrice>125500.0</retailPrice>
-  </com.vgb.Equipment>
-  <com.vgb.Equipment>
-    <uuid>984bac8d-96f7-4d6b-9948-1cabae15ba51</uuid>
-    <name>Compactor</name>
-    <modelNumber>FLT100</modelNumber>
-    <retailPrice>4500.0</retailPrice>
-  </com.vgb.Equipment>
-  <com.vgb.Equipment>
-    <uuid>50e6f93f-3792-459f-b1c6-b512b994ff2b</uuid>
-    <name>Dump Truck</name>
-    <modelNumber>DUMPRX5000</modelNumber>
-    <retailPrice>90450.0</retailPrice>
-  </com.vgb.Equipment>
-  <com.vgb.Equipment>
-    <uuid>e9afb98d-ac99-4974-a274-2dca5c1238f5</uuid>
-    <name>Skid-Steer</name>
-    <modelNumber>S4325</modelNumber>
-    <retailPrice>8500.0</retailPrice>
+    <uuid>5e6f7f8e-9012-34ab-cdef-67890abcde12</uuid>
+    <name>Loader</name>
+    <modelNumber>LD100</modelNumber>
+    <retailPrice>80000.0</retailPrice>
   </com.vgb.Equipment>
   <com.vgb.Material>
-    <uuid>ac47e0f6-5d5b-49fe-af54-a6625a6374a8</uuid>
-    <name>concrete</name>
-    <unit>bag</unit>
-    <costPerUnit>40.0</costPerUnit>
+    <uuid>6f7f8e9a-0123-45ab-cdef-7890abcdef12</uuid>
+    <name>Sand</name>
+    <unit>Truckload</unit>
+    <costPerUnit>30.0</costPerUnit>
+    <quantity>50</quantity>
   </com.vgb.Material>
-  <com.vgb.Material>
-    <uuid>72e157ac-5b46-4b3b-b86b-599a89be7289</uuid>
-    <name>sand</name>
-    <unit>ton</unit>
-    <costPerUnit>1500.0</costPerUnit>
-  </com.vgb.Material>
-  <com.vgb.Material>
-    <uuid>97dc9f91-c009-4e8d-b08c-3d4d0ded0bad</uuid>
-    <name>nails</name>
-    <unit>box</unit>
-    <costPerUnit>15.0</costPerUnit>
-  </com.vgb.Material>
-  <com.vgb.Material>
-    <uuid>30bebf58-ba44-4bef-885f-8fccb7db9544</uuid>
-    <name>lumber</name>
-    <unit>lft</unit>
-    <costPerUnit>8.0</costPerUnit>
-  </com.vgb.Material>
-  <com.vgb.Material>
-    <uuid>8c8bbffa-a939-44f4-98b7-66837e7d16e9</uuid>
-    <name>drywall</name>
-    <unit>sheet</unit>
-    <costPerUnit>35.0</costPerUnit>
-  </com.vgb.Material>
-  <com.vgb.Contract>
-    <uuid>38bebacb-a3ca-459e-a71f-8e5826a2f7fa</uuid>
-    <name>foundation pour</name>
-    <companyUuid>0673a09a-5cc1-4269-88f2-e665c2f3f33c</companyUuid>
-  </com.vgb.Contract>
-  <com.vgb.Contract>
-    <uuid>699607c3-d9db-4aef-a8ab-b3a6cab21e12</uuid>
-    <name>footing pour</name>
-    <companyUuid>0673a09a-5cc1-4269-88f2-e665c2f3f33c</companyUuid>
-  </com.vgb.Contract>
-  <com.vgb.Contract>
-    <uuid>ce9fc7f6-8be8-48cb-9236-7873dbf9b2b7</uuid>
-    <name>concrete pad pour</name>
-    <companyUuid>0673a09a-5cc1-4269-88f2-e665c2f3f33c</companyUuid>
-  </com.vgb.Contract>
-  <com.vgb.Contract>
-    <uuid>97ee84b8-dc93-4db2-84bd-48e72a7f3131</uuid>
-    <name>electric install</name>
-    <companyUuid>a8bae950-96ac-43a9-9a29-729db552e981</companyUuid>
-  </com.vgb.Contract>
-  <com.vgb.Contract>
-    <uuid>b118fa82-14cf-46f4-8574-41e583badc27</uuid>
-    <name>generator install</name>
-    <companyUuid>a8bae950-96ac-43a9-9a29-729db552e981</companyUuid>
-  </com.vgb.Contract>
 </data>

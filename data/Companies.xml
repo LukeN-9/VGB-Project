@@ -1,47 +1,59 @@
 <data>
   <com.vgb.Company>
-    <companyUuid>d7d7b071-e63f-4af5-88f3-2e47a09852fb</companyUuid>
-    <contactUuid>30f42bcf-2556-491e-8c0c-4e52d7dcfd90</contactUuid>
-    <name>Weissnat and Okuneva</name>
-    <street>531 Bunting Way</street>
-    <city>Pasadena</city>
-    <state>CA</state>
-    <zip>91131</zip>
+    <companyUuid>9f8e7d6c-5b4a-3f2e-1d0c-b9a8e7d6c5b4</companyUuid>
+    <contact>
+      <uuid>abcdef12-3456-7890-abcd-ef1234567890</uuid>
+      <firstName>Bob</firstName>
+      <lastName>Johnson</lastName>
+      <phone>555-9101</phone>
+      <emails>
+        <string>bob.johnson@example.com</string>
+      </emails>
+    </contact>
+    <name>CoolTech</name>
+    <address>
+      <street>123 Main St</street>
+      <city>New York</city>
+      <state>NY</state>
+      <zip>10001</zip>
+    </address>
   </com.vgb.Company>
   <com.vgb.Company>
-    <companyUuid>e2b1228a-1066-4f79-99c6-321658ef1587</companyUuid>
-    <contactUuid>96aa54a4-f452-405c-82b2-12f262095f75</contactUuid>
-    <name>Abernathy-Schamberger</name>
-    <street>243 Oriole Avenue</street>
-    <city>Seattle</city>
-    <state>WA</state>
-    <zip>98148</zip>
+    <companyUuid>8e7d6c5b-4a3f-2e1d-0cb9-a8e7d6c5b4a3</companyUuid>
+    <contact>
+      <uuid>bcdef123-4567-890a-bcde-f1234567890a</uuid>
+      <firstName>Jane</firstName>
+      <lastName>Smith</lastName>
+      <phone>555-5678</phone>
+      <emails>
+        <string>jane.smith@example.com</string>
+      </emails>
+    </contact>
+    <name>TechyToys</name>
+    <address>
+      <street>456 Elm St</street>
+      <city>Los Angeles</city>
+      <state>CA</state>
+      <zip>90001</zip>
+    </address>
   </com.vgb.Company>
   <com.vgb.Company>
-    <companyUuid>d631d183-5276-49cd-8136-ba130df24826</companyUuid>
-    <contactUuid>cc88a3dc-64d6-4070-b9b0-b2ae9ace0061</contactUuid>
-    <name>Jacobi and White</name>
-    <street>46 Ruskin Lane</street>
-    <city>Amarillo</city>
-    <state>TX</state>
-    <zip>79176</zip>
-  </com.vgb.Company>
-  <com.vgb.Company>
-    <companyUuid>a8bae950-96ac-43a9-9a29-729db552e981</companyUuid>
-    <contactUuid>ddd24cee-31fa-48ac-b311-04fc329bb03b</contactUuid>
-    <name>Klocko Inc</name>
-    <street>0 Ridge Oak Trail</street>
-    <city>Washington</city>
-    <state>DC</state>
-    <zip>20566</zip>
-  </com.vgb.Company>
-  <com.vgb.Company>
-    <companyUuid>0673a09a-5cc1-4269-88f2-e665c2f3f33c</companyUuid>
-    <contactUuid>bc0d9b2c-39ad-4c01-a835-02cfe79bf43e</contactUuid>
-    <name>Mitchell LLC</name>
-    <street>5887 Bobwhite Trail</street>
-    <city>Philadelphia</city>
-    <state>PA</state>
-    <zip>19136</zip>
+    <companyUuid>7d6c5b4a-3f2e-1d0c-b9a8-e7d6c5b4a3f2</companyUuid>
+    <contact>
+      <uuid>cdef1234-5678-90ab-cdef-1234567890ab</uuid>
+      <firstName>John</firstName>
+      <lastName>Doe</lastName>
+      <phone>555-1234</phone>
+      <emails>
+        <string>john.doe@example.com</string>
+      </emails>
+    </contact>
+    <name>CStuff</name>
+    <address>
+      <street>789 Oak St</street>
+      <city>Chicago</city>
+      <state>IL</state>
+      <zip>60001</zip>
+    </address>
   </com.vgb.Company>
 </data>

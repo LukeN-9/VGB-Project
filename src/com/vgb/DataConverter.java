@@ -1,50 +1,37 @@
 package com.vgb;
 
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
-import com.thoughtworks.xstream.XStream;
-import com.thoughtworks.xstream.io.xml.DomDriver;
-
-import java.io.*;
-import java.util.*;
+import java.io.IOException;
+import java.util.List;
 
 public class DataConverter {
-    public static void main(String[] args) {
-        String dataDir = "data";
-        
-        // Parse CSV files
-        List<Person> persons = Person.parsePersons(dataDir + "/Persons.csv");
-        List<Company> companies = Company.parseCompanies(dataDir + "/Companies.csv", persons); // Pass persons to Company parsing
-        List<Item> items = Item.parseItems(dataDir + "/Items.csv");
+    private List<Person> persons;
+    private List<Company> companies;
+    private List<Item> items;
+    private List<Invoice> invoices;
 
-        // Serialize to JSON
-        serializeToJson(persons, dataDir + "/Persons.json");
-        serializeToJson(companies, dataDir + "/Companies.json");
-        serializeToJson(items, dataDir + "/Items.json");
-
-        // Serialize to XML
-        serializeToXml(persons, dataDir + "/Persons.xml");
-        serializeToXml(companies, dataDir + "/Companies.xml");
-        serializeToXml(items, dataDir + "/Items.xml");
+    /** Loads all data from CSV files */
+    public void loadAllData(String dataDir) throws IOException {
+        persons = ParseData.parsePersons(dataDir + "/Persons.csv");
+        companies = ParseData.parseCompanies(dataDir + "/Companies.csv", persons);
+        items = ParseData.parseItems(dataDir + "/Items.csv");
+        invoices = ParseData.parseInvoices(dataDir + "/Invoices.csv", companies, persons);
+        ParseData.parseInvoiceItems(dataDir + "/InvoiceItems.csv", invoices, items);
     }
 
-    private static void serializeToJson(Object data, String filePath) {
-        try (Writer writer = new FileWriter(filePath)) {
-            Gson gson = new GsonBuilder().setPrettyPrinting().create();
-            gson.toJson(data, writer);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public List<Person> getPersons() {
+        return persons;
     }
 
-    private static void serializeToXml(Object data, String filePath) {
-        try (Writer writer = new FileWriter(filePath)) {
-            XStream xstream = new XStream(new DomDriver());
-            xstream.alias("data", List.class);
-            xstream.toXML(data, writer);
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
+    public List<Company> getCompanies() {
+        return companies;
+    }
+
+    public List<Item> getItems() {
+        return items;
+    }
+
+    public List<Invoice> getInvoices() {
+        return invoices;
     }
 }
 

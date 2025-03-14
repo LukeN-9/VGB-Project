@@ -28,4 +28,10 @@ public class Address {
     public String getZip() {
         return zip;
     }
+    
+    @Override
+    public String toString() {
+        return String.format("%s\n%s, %s %s",
+                street, city, state, zip);
+    }
 }
