@@ -19,7 +19,7 @@ import org.apache.logging.log4j.Logger;
 
 
 /**
- * Loads all domain objects (Person, Company, Item, Invoice, InvoiceItem)
+ * Loads all domain objects (Person, Company, Item, Invoice, InvoiceItems)
  * from the MySQL database via JDBC.
  */
 public class DataLoader {
@@ -43,7 +43,7 @@ public class DataLoader {
             log.info("Loading invoices");
             invoices = loadInvoices(conn, companies, persons);
             log.info("Loading invoice items");
-            loadInvoiceItem(conn, invoices, items);
+            loadInvoiceItems(conn, invoices, items);
         } catch (SQLException e) {
             log.error("SQL error loading data", e);
             throw e;
@@ -130,46 +130,59 @@ public class DataLoader {
     }
 
     /**
-     * Loads all Items from the database and returns them.
+     * Reads all rows from Item and maps them to Java objects.
+     * Uses the provided Connection rather than opening its own.
      */
     private List<Item> loadItems(Connection conn) throws SQLException {
-        // 1) use a fresh local list
-        List<Item> itemList = new ArrayList<>();
-
+        List<Item> items = new ArrayList<>();
         String sql = "SELECT uuid, type, name, field1, field2, field3 FROM Item";
         try (PreparedStatement ps = conn.prepareStatement(sql);
              ResultSet rs = ps.executeQuery()) {
 
             while (rs.next()) {
-                String uuid  = rs.getString("uuid");
-                String type  = rs.getString("type");
-                String name  = rs.getString("name");
-                String f1    = rs.getString("field1");
-                String f2    = rs.getString("field2");
+                String uuid    = rs.getString("uuid");
+                String type    = rs.getString("type");
+                String name    = rs.getString("name");
+                String f1raw   = rs.getString("field1");
+                String f2raw   = rs.getString("field2");
+                String f3raw   = rs.getString("field3");
+
+                String f1 = (f1raw != null ? f1raw.trim() : "");
+                String f2 = (f2raw != null ? f2raw.trim() : "");
+                String f3 = (f3raw != null ? f3raw.trim() : "");
 
                 switch (type) {
                     case "E":
-                        double price = Double.parseDouble(f2);
-                        itemList.add(new Equipment(uuid, name, f1, price));
+                        double retailPrice = f2.isEmpty() ? 0.0 : Double.parseDouble(f2);
+                        items.add(new Equipment(uuid, name, f1, retailPrice));
                         break;
                     case "M":
-                        double unitCost = Double.parseDouble(f2);
-                        itemList.add(new Material(uuid, name, f1, unitCost, 0));
+                        double unitPrice = f2.isEmpty() ? 0.0 : Double.parseDouble(f2);
+                        int quantity     = f3.isEmpty() ? 0     : Integer.parseInt(f3);
+                        items.add(new Material(uuid, name, f1, unitPrice, quantity));
                         break;
                     case "C":
-                        double contractCost = Double.parseDouble(f2);
-                        itemList.add(new Contract(uuid, name, uuid, contractCost));
+                        double contractCost = f2.isEmpty() ? 0.0 : Double.parseDouble(f2);
+                        items.add(new Contract(uuid, name, f1, contractCost));
+                        break;
+                    case "L":
+                        if (!f1.isEmpty() && !f2.isEmpty()) {
+                            items.add(new Lease(uuid, new Equipment(uuid, name, "", 0.0), f1, f2));
+                        }
+                        break;
+                    case "R":
+                        double hours = f2.isEmpty() ? 0.0 : Double.parseDouble(f2);
+                        items.add(new Rental(uuid, new Equipment(uuid, name, "", 0.0), hours));
                         break;
                     default:
-                        // rentals andleases are handled later in loadInvoiceItem()
-                        itemList.add(new Equipment(uuid, name, f1, Double.parseDouble(f2)));
+                        // unknown type, skip
                         break;
                 }
             }
         }
-
-        return itemList;
+        return items;
     }
+
 
     /**
      * Executes a SELECT on the Invoice table and constructs Invoice instances,
@@ -203,10 +216,10 @@ public class DataLoader {
      * Executes a SELECT on InvoiceItems and adds each item to its Invoice,
      * creating Rental or Lease objects when flagged, otherwise adding base Item.
      */
-    private void loadInvoiceItem(Connection conn,
+    private void loadInvoiceItems(Connection conn,
                                   List<Invoice> invoices,
                                   List<Item> items) throws SQLException {
-        String sql = "SELECT invoiceUuid, itemUuid, field1, field2, field3 FROM InvoiceItem";
+        String sql = "SELECT invoiceUuid, itemUuid, field1, field2, field3 FROM InvoiceItems";
         try (PreparedStatement ps = conn.prepareStatement(sql);
              ResultSet rs = ps.executeQuery()) {
             while (rs.next()) {
